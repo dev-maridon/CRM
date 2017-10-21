@@ -9,3 +9,13 @@ var mainView = myApp.addView('.view-main', {
   // Because we want to use dynamic navbar, we need to enable it for this view:
   dynamicNavbar: true
 });
+
+
+         $$('.login-screen .list-button').on('click', function () {
+            var uname = $$('.login-screen input[name = "username"]').val();
+            var pwd = $$('.login-screen input[name = "password"]').val();
+            
+            myApp.alert('Username: ' + uname + ', Password: ' + pwd, function () {
+               myApp.closeModal('.login-screen');
+            });
+         });

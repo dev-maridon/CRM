@@ -7,11 +7,13 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <!-- Your app title -->
-    <title>My App</title>
+    <title>CRM</title>
     <!-- Path to Framework7 iOS CSS theme styles-->
     <link rel="stylesheet" href="css/framework7.ios.min.css">
     <!-- Path to Framework7 iOS related color styles -->
     <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+	<!-- Mostserrat Font     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="css/app.css">
   </head>
@@ -50,9 +52,11 @@
           <div data-page="index" class="page">
             <!-- Scrollable page content -->
             <div class="page-content">
+	            <div class="content-block">
               <p>Page content goes here</p>
               <!-- Link to another page -->
               <a href="about.html">About app</a>
+	            </div>
             </div>
           </div>
         </div>
@@ -66,6 +70,57 @@
         </div>
       </div>
     </div>
+    
+	<!-- login screen -->
+	<div class = "login-screen modal-in">
+         <div class = "view">
+            <div class = "page">
+               <div class = "page-content login-screen-content">
+                  <div class = "login-screen-title">
+	              		<i class="f7-icons">home_fill</i>
+	              		<h2>RELATE<br />CRM</h2>
+                  </div>
+                  
+                  <form>
+                     <div class = "list-block">
+                        <ul>
+                           <li class = "item-content">
+                              <div class = "item-inner">
+                                 <div class = "item-title label">Username</div>
+                                 <div class = "item-input">
+                                    <input type = "text" name = "username" placeholder = "Enter the username">
+                                 </div>
+                              </div>
+                           </li>
+                           
+                           <li class = "item-content">
+                              <div class = "item-inner">
+                                 <div class = "item-title label">Password</div>
+                                 <div class = "item-input">
+                                    <input type = "password" name = "password" placeholder = "Enter the password">
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                     
+                     <div class = "list-block">
+                        <ul>
+                           <li><a href = "#" class = "item-link list-button">Log In</a></li>
+                        </ul>
+                        
+                        <div class = "list-block-label">
+                           <p><a href = "#" class = "close-login-screen">Click here to close Login Screen</a></p>
+                        </div>
+                     </div>
+                  </form>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <!-- Path to your app js-->
